@@ -2,7 +2,7 @@ package clases;
 
 public class Masajista extends Persona {
 	private String titulacion;
-	private int aniosDeExperiencia;
+	private int aniosExperiencia;
 	
 	public Masajista(String clase) {
 		super(clase);
@@ -17,12 +17,14 @@ public class Masajista extends Persona {
 	}
 
 	public int getAniosDeExperiencia() {
-		return aniosDeExperiencia;
+		return aniosExperiencia;
 	}
 
 	public void setAniosDeExperiencia(int aniosDeExperiencia) {
-		this.aniosDeExperiencia = aniosDeExperiencia;
+		this.aniosExperiencia = aniosDeExperiencia;
 	}
+	
+	
 	
 	public void darMasaje() {
 		System.out.println("Un masajista ha dado un masaje");
@@ -33,6 +35,13 @@ public class Masajista extends Persona {
 	public void viajar() {
 		System.out.println("EL masajista esta viajando");
 	}
+	
+	public String toString() {
+		return super.toString()+ " Titulacion: " +this.getTitulacion()
+		+ " Añios de experiencia: "+this.getAniosDeExperiencia();
+		
+	}
+	
 	
 
 }

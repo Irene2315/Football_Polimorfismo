@@ -2,7 +2,7 @@ package clases;
 
 public class Futbolista extends Persona{
 	private int dorsal;
-	private String demarcación;
+	private String demarcacion;
 	
 	
 
@@ -25,13 +25,13 @@ public class Futbolista extends Persona{
 
 
 	public String getDemarcación() {
-		return demarcación;
+		return demarcacion;
 	}
 
 
 
 	public void setDemarcación(String demarcación) {
-		this.demarcación = demarcación;
+		this.demarcacion = demarcación;
 	}
 	
 	public void jugarPartido() {
@@ -48,4 +48,8 @@ public class Futbolista extends Persona{
 		System.out.println("EL futbolista esta viajando");
 	}
 	
+	public String toString() {
+		return super.toString()+ " Dorsal" +this.getDorsal() +
+	  " Demarcacion" +this.getDemarcación();
+	}
 }

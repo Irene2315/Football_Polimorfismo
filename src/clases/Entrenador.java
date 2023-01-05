@@ -38,4 +38,9 @@ public class Entrenador extends Persona {
 		System.out.println("EL entrenador esta viajando");
 	}
 	
+	public String toString() {
+		return super.toString()	+ " Titulación" +this.getTitulacion() +
+		"Anios experiencia" +this.getAniosExperiencia();
+}
+	
 }
