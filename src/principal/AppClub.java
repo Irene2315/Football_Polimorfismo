@@ -55,13 +55,13 @@ public class AppClub {
 				Scanner.nextLine();
 				break;
 			case TODOS:
-				System.out.println("tercera opcion seleccionada\n");
+				todos(personas);
 				break;
 			case CONCENTRARSE:
-				System.out.println("tercera opcion seleccionada\n");
+				concentrarse(personas);
 				break;
 			case VIAJAR:
-				System.out.println("tercera opcion seleccionada\n");
+				viajar(personas);
 				break;
 			case SALIR:
 				System.out.println("ADIOS");
@@ -89,16 +89,18 @@ public class AppClub {
 		clase_1 = Scanner.nextLine();
 		System.out.println("Cual es su ID?");
 		ID_1 = Scanner.nextInt();
+		Scanner.nextLine();
 		System.out.println("Cual es su nombre?");
 		nombre_1 = Scanner.nextLine();
-		Scanner.nextLine();
+		
 		System.out.println("Cual es su apellido");
 		apellidos_1 = Scanner.nextLine();
 		System.out.println("Cual es su edad?");
 		edad_1 = Scanner.nextInt();
-		System.out.println("QUé titulación tiene?");
-		titulacion_1 = Scanner.nextLine();
 		Scanner.nextLine();
+		System.out.println("Qué titulación tiene?");
+		titulacion_1 = Scanner.nextLine();
+		
 		System.out.println("Cuantos añios de experiencia tiene?");
 		aniosExperiencia_1 = Scanner.nextInt();
 
@@ -130,16 +132,18 @@ public class AppClub {
 		clase_2 = Scanner.nextLine();
 		System.out.println("Cual es su ID?");
 		ID_2 = Scanner.nextInt();
+		Scanner.nextLine();
 		System.out.println("Cual es su nombre?");
 		nombre_2 = Scanner.nextLine();
-		Scanner.nextLine();
+		
 		System.out.println("Cual es su apellido");
 		apellidos_2 = Scanner.nextLine();
 		System.out.println("Cual es su edad?");
 		edad_2 = Scanner.nextInt();
+		
 		System.out.println("Cual es su número dorsal?");
 		dorsal_2 = Scanner.nextInt();
-		Scanner.nextLine();
+		
 		System.out.println("Cual es su demarcación?");
 		demarcacion_2 = Scanner.nextLine();
 
@@ -171,16 +175,18 @@ public class AppClub {
 		clase_3 = Scanner.nextLine();
 		System.out.println("Cual es su ID?");
 		ID_3 = Scanner.nextInt();
+		Scanner.nextLine();
 		System.out.println("Cual es su nombre?");
 		nombre_3 = Scanner.nextLine();
-		Scanner.nextLine();
+		
 		System.out.println("Cual es su apellido");
 		apellidos_3 = Scanner.nextLine();
 		System.out.println("Cual es su edad?");
 		edad_3 = Scanner.nextInt();
-		System.out.println("QUé titulación tiene?");
-		titulacion_3 = Scanner.nextLine();
 		Scanner.nextLine();
+		System.out.println("Qué titulación tiene?");
+		titulacion_3 = Scanner.nextLine();
+		
 		System.out.println("Cuantos añios de experiencia tiene?");
 		aniosExperiencia_3 = Scanner.nextInt();
 
@@ -196,9 +202,21 @@ public class AppClub {
 		return masajista;
 
 	}
-	public static void Todos(ArrayList <Persona> personas) {
+	public static void todos(ArrayList <Persona> personas) {
 		for (int i = 0; i < personas.size(); i++) {
 			System.out.println(personas.get(i));
+		}
+	}
+	
+	public static void concentrarse(ArrayList <Persona> personas) {
+		for (Persona persona : personas) {
+			persona.concentrarse();
+		}
+	}
+	
+	public static void viajar (ArrayList <Persona> personas) {
+		for (Persona persona : personas) {
+			persona.viajar();
 		}
 	}
 

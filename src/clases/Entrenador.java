@@ -39,8 +39,8 @@ public class Entrenador extends Persona {
 	}
 	
 	public String toString() {
-		return super.toString()	+ " Titulación" +this.getTitulacion() +
-		"Anios experiencia" +this.getAniosExperiencia();
+		return super.toString()	+ " Titulación: " +this.getTitulacion() +
+		" Anios experiencia: " +this.getAniosExperiencia();
 }
 	
 }

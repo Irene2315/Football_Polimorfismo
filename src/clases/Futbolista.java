@@ -49,7 +49,7 @@ public class Futbolista extends Persona{
 	}
 	
 	public String toString() {
-		return super.toString()+ " Dorsal" +this.getDorsal() +
-	  " Demarcacion" +this.getDemarcación();
+		return super.toString()+ " Dorsal: " +this.getDorsal() +
+	  " Demarcacion: " +this.getDemarcación();
 	}
 }
